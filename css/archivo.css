@@ -1,0 +1,140 @@
+body{
+    background: linear-gradient(to bottom, #d9a7c7, #fffcdc);
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h1{
+    color: whitesmoke;
+}
+.btn-light{
+    width: 90px !important;
+    margin-left: 900px;
+}
+#remeras,#batman,#anime,#series,#simpsons,#buzos{
+    margin-left: 90px;
+}
+.content{
+    width: 21%;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    background-color:beige;
+    border-radius:10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: .4s;
+    }
+    .content:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    transform: translate(0px, -8px);
+    transition: .6s;
+    }
+.img{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    }
+    p{
+    text-align: center;
+    color: #b2bec3;
+    padding: 0 8px;
+    }
+.divPrecio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h6{
+    font-size: 26px;
+    text-align: center;
+    color: #222f3e;
+    margin: 0;
+    }
+.buy-1{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    background-color:#222f3e;
+    width: 100%;
+    padding: 15px;
+    border:0px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    }
+.content2{
+    width: 200px;
+    margin: 10px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    background-color:rgb(243, 237, 239);
+    color:#222f3e;
+    border-radius:10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: .4s;
+}
+#tarjetaCarrito{
+    width: 320px;
+    height: 330px;
+    display: grid;
+    grid-template-columns: 75% auto ;
+    grid-template-areas: "tarjeta cantidad";
+}
+.cantidad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: cantidad;
+    margin-right: 10px;
+}
+.talles{
+    grid-area: talle;
+    display: flex;
+    flex-direction: column;
+}
+.finalizarCompra{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botonComprar{
+    width: 90px;
+}
+#botonMostrar{
+    background-color: transparent !important;
+    border: transparent;
+}
+i{
+    color: antiquewhite;
+    font-size: 28px;
+}
+nav{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.botonNav{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 180px;
+    height: 40px;
+    border: #d9a7c7;
+    color: whitesmoke;
+    font-size: large;
+    background-color: transparent;
+}

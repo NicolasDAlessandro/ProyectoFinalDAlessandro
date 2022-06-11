@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/toastmejs@latest/dist/css/toastme.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300i,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="css/archivo.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>NBS.Style</h1>
+        <button class="btn btn-light" id="botonMostrar" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop"> 
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#009988" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="6" cy="19" r="2" />
+                <circle cx="17" cy="19" r="2" />
+                <path d="M17 17h-11v-14h-2" />
+                <path d="M6 5l14 1l-1 7h-13" />
+            </svg>
+            <i style="width:44px; height:44px;" id="cantidadAgregada"> </i>
+          </button>
+          
+          <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title totalCompra" id="staticBackdropLabel"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div id="mostrar">
+                
+              </div>
+              <div class="finalizarCompra">
+                <button type="button" class="btn btn-success botonComprar">Comprar</button>
+              </div>
+            </div>
+          </div>
+        <div id="mostrar">
+            
+        </div>    
+    </header>
+    <nav>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <button class="botonTodos botonNav"> Todos</button>
+        </li>
+        <li class="nav-item">
+          <button class="botonBatman botonNav"> Batman</button>
+        </li>
+        <li class="nav-item">
+          <button class="botonSimpsons botonNav"> The Simpsons</button>
+        </li>
+        <li class="nav-item">
+          <button class="botonAnime botonNav"> Anime</button>
+        </li>
+        <li class="nav-item">
+          <button class="botonSerie botonNav"> Series y Peliculas</button>
+        </li>
+        <li class="nav-item">
+          <button class="botonBuzos botonNav"> Buzos</button>
+        </li>
+      </ul>
+    </nav>
+    <main style="display: flex; flex-direction:column">
+        <div id="remeras"></div>
+        <div id="batman"></div>
+        <div id="simpsons"></div>
+        <div id="anime"></div>
+        <div id="series"></div>
+        <div id="buzos"></div>
+    </main>
+    <script src="js/archivo.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/toastmejs@latest/dist/js/toastme.min.js" ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
